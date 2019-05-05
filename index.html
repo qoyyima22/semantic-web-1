@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link href="aboutUs.css" rel="stylesheet" type="text/css">
+    <title>CURRENCY CONVERTOR</title>
+</head>
+
+<body>
+    <div class="bg">
+        <h2 id="titlePage">
+            WELCOME TO CURRENCY RATE CONVERTER!
+        </h2>
+        <div id="bgc">
+            <div class="left">
+                <form>
+                    <label class="label" for="nilai1">Specify desired value to convert :</label>
+                    <input class="boxLeft" id="nilai1" type="text" name="nilai1" required><br><br>
+                    <label class="label"  for="inputCur">Specify your currency type to convert :</label>
+                    <input class="boxLeft" list="inputCurs" id="inputCur" name="inputCur">
+                    <datalist id="inputCurs">
+                        <option value="Rupiah"></option>
+                        <option value="USD"></option>
+                        <option value="Euro"></option>
+                        <option value="Yen"></option>
+                        <option value="Poundsterling"></option>
+                        <option value="Australian Dollar"></option>
+                        <option value="Canada Dollar"></option>
+                        <option value="Switzerland Franc"></option>
+                        <option value="Chinese Renminbi"></option>
+                        <option value="Swedian Krona"></option>
+                    </datalist><br><br>
+                    <label class="label" for="outputCur">Specify your desired currency type :</label>
+                    <input class="boxLeft" list="outputCurs" id="outputCur" name="outputCur">
+                    <datalist id="outputCurs">
+                        <option value="Rupiah"></option>
+                        <option value="USD"></option>
+                        <option value="Euro"></option>
+                        <option value="Yen"></option>
+                        <option value="Poundsterling"></option>
+                        <option value="Australian Dollar"></option>
+                        <option value="Canada Dollar"></option>
+                        <option value="Switzerland Franc"></option>
+                        <option value="Chinese Renminbi"></option>
+                        <option value="Swedian Krona"></option>
+                    </datalist><br><br>
+                    <input class="label" id="butt" type="button" onclick="convertCur();return false;"
+                        value="Convert it!"><br><br>
+                </form>
+            </div>
+            <div class="right">
+                <form>
+                    <p class="label" id="result">Your input is :<input class="boxRight" type="text" id="demo"></p>
+                    <p class="label" id="result2">Your input multiplier is :<input class="boxRight" type="text"
+                            id="demo2"></p>
+                    <p class="label" id="result3">Your output multiplier is :<input class="boxRight" type="text"
+                            id="demo3"></p>
+                </form>
+            </div>
+        </div>
+        <h3 id='output'> </h3>
+    </div>
+    <script src=script.js></script>
+</body>
+
+</html>
